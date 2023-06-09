@@ -4,208 +4,178 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F0F8FF"
-    android:onClick="goAdmin"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="398dp"
-        android:layout_height="208dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="10dp">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
-            android:layout_marginTop="20dp"
-            android:background="#F0F8FF"
-            android:maxLines="10"
-            android:text="COVID 19\n"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="387dp"
-            android:layout_height="144dp"
-            android:layout_alignBottom="@+id/textView"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="40dp"
-
-            android:layout_marginBottom="-140dp"
-            android:text="Тест поможет провести самооценку, есть ли у вас симптомы COVID-19, и выяснить, нуждаетесь ли вы с специализированной помощи либо можете позаботиться о себе сами, чтобы не перегружать работников сферы здравоохранения."
-            android:textColor="#25383C"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="33dp"
-            tools:layout_editor_absoluteY="75dp" />
-
-    </RelativeLayout>
-
-    <GridLayout
-        android:id="@+id/asks"
-        android:layout_width="350dp"
-        android:layout_height="450dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="208dp"
-        android:columnCount="2"
-        android:rowCount="5"
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="118dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Вес"
+        android:inputType="numberSigned"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-        <TextView
-            android:layout_marginTop="10dp"
-            android:background="#FFFFFF"
-            android:text="Введите Вашу температуру"
-            android:textColor="@color/black"
-            android:textSize="19dp" />
+    <TextView
+        android:id="@+id/textViewFrom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Введите город назначения:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="213dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerFrom"/>
 
-        <EditText
-            android:id="@+id/temperature"
-            android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"
-            android:textSize="19dp" />
+    <Spinner
+        android:id="@+id/spinnerIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFrom2" />
 
-        <TextView
-            android:layout_marginTop="10dp"
-            android:background="#FFFFFF"
-            android:text="Есть ли у Вас кашель?"
-            android:textColor="@color/black"
-            android:textSize="19dp" />
+    <Button
+        android:id="@+id/adminButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Вход для админа"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="goAdmin" />
 
-        <RadioGroup
-            android:id="@+id/cough"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selection">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif"
+        android:padding="20dp"
+        android:text="Введите данные о поездке"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <RadioButton
-                android:id="@+id/haveCough"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="coughListen"
-                android:text="Да"
-                android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/textViewFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:padding="5dp"
+        android:text="Введите город отправления:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datebutton" />
 
-            <RadioButton
-                android:id="@+id/noCough"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="coughListen"
-                android:text="Нет"
-                android:textColor="@color/black" />
-        </RadioGroup>
-
-        <TextView
-            android:layout_marginTop="10dp"
-            android:background="#FFFFFF"
-            android:text="Введите Ваш возраст"
-            android:textColor="@color/black"
-            android:textSize="19dp" />
-
-        <EditText
-            android:id="@+id/age"
-            android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"
-            android:textSize="19dp" />
-
-        <TextView
-            android:layout_marginTop="10dp"
-            android:background="#FFFFFF"
-            android:text="Чувствуете вкусы и запахи?"
-            android:textColor="@color/black"
-            android:textSize="19dp" />
-
-        <RadioGroup
-            android:id="@+id/tasteSmell"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selection">
-
-            <RadioButton
-                android:id="@+id/haveTS"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="tasteSmellListen"
-                android:text="Да"
-                android:textColor="@color/black" />
-
-            <RadioButton
-                android:id="@+id/noTS"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="tasteSmellListen"
-                android:text="Нет"
-                android:textColor="@color/black" />
-        </RadioGroup>
-
-        <TextView
-            android:layout_marginTop="10dp"
-            android:background="#FFFFFF"
-            android:text="Наблюдаете усталость?"
-            android:textColor="@color/black"
-            android:textSize="19dp" />
-
-        <RadioGroup
-            android:id="@+id/ust"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selection">
-
-            <RadioButton
-                android:id="@+id/haveU"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="tirednessListen"
-                android:text="Да"
-                android:textColor="@color/black" />
-
-            <RadioButton
-                android:id="@+id/noU"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="tirednessListen"
-                android:text="Нет"
-                android:textColor="@color/black" />
-        </RadioGroup>
-    </GridLayout>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/resultbutton"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#ADD8E6"
-        android:onClick="getRes"
-        android:radius="15dp"
-        android:shadowColor="#2A2E45"
-        android:text="Завершить"
-        android:textColor="@color/black"
+    <Spinner
+        android:id="@+id/spinnerFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFrom" />
 
 
-        android:textSize="18dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/asks" />
+    <EditText
+        android:id="@+id/dateBox"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="62dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:enabled="true"
+        android:focusable="false"
+        android:hint="Дата"
+        android:inputType="date"
+        android:longClickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    <!-- <Button
+        android:id="@+id/timebutton"
+        android:layout_width="123dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="28dp"
+        android:text="Выбрать время"
+        app:layout_constraintStart_toEndOf="@+id/timeBox"
+        app:layout_constraintTop_toBottomOf="@+id/datebutton" />-->
 
+    <EditText
+        android:id="@+id/timeBox"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="192dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Время"
+        android:inputType="time"
+        app:layout_constraintStart_toEndOf="@id/dateBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    <Button
+        android:id="@+id/datebutton"
+        android:layout_width="251dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="62dp"
+        android:onClick="goChangeDate"
+        android:text="Выбрать дату и время"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateBox" />
 
+    <Button
+        android:id="@+id/expertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:text="Выбрать маршрут"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton"
+        android:layout_marginTop="15dp"
+         />
 
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Только бесплатные дороги"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight" />
 
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="118dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Высота"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:text="Введите высоту и вес вашего авто"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerIn"
+        android:layout_marginTop="15dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

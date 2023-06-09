@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.testcovid">
+    package="com.example.myroute">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -16,28 +16,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestCovid">
         <activity
-            android:name=".ViewOne"
-            android:exported="false" />
-        <activity
-            android:name=".ListBeforeMap"
-            android:exported="false" />
-        <activity
-            android:name=".EditHospActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ListHospActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ViewHospitals"
-            android:exported="false" />
-        <activity
             android:name=".ResultActivity"
             android:exported="false" />
         <activity
-            android:name=".Permission"
+            android:name=".DateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TimeXActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListWayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditWayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminEnterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

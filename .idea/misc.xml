@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/GIS2/app/src/main/res/layout/activity_edit_hosp.xml" value="0.24728260869565216" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GIS2/app/src/main/res/layout/activity_list_before_map.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GIS2/app/src/main/res/layout/activity_list_hosp.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GIS2/app/src/main/res/layout/activity_main.xml" value="0.12" />
@@ -16,6 +17,20 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/GISTestCovid/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GISTestCovid/app/src/main/res/layout/activity_result.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GISTestCovid/app/src/main/res/layout/activity_view_hospitals.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_admin.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_admin_enter.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_date_time.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_edit_hosp.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_edit_location.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_edit_way.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_list_hosp.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_list_location.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_list_way.xml" value="0.13768115942028986" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_result.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_result2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_time.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRoute/app/src/main/res/layout/activity_weather.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TestCovid/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TestCovid/app/src/main/res/layout/activity_result.xml" value="0.264" />
         <entry key="..\:/Users/alina/AndroidStudioProjects/GISTestCovid-master/app/src/main/res/layout/activity_list_hosp.xml" value="0.11041666666666666" />

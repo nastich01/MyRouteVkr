@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditWayActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl1"
+        android:layout_width="400dp"
+        android:layout_height="620dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textfrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Город отправления"
+
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/way_length"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введите протяженность (км)"
+            android:maxLines="1"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textlen" />
+
+        <TextView
+            android:id="@+id/textin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Город назначения"
+            app:layout_constraintTop_toBottomOf="@+id/from_loc"/>
+
+        <Spinner
+            android:id="@+id/in_loc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введите город назначения"
+            android:maxLines="1"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textin" />
+
+        <TextView
+            android:id="@+id/textlen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Протяженность"
+            app:layout_constraintTop_toBottomOf="@+id/in_loc"/>
+
+        <Spinner
+            android:id="@+id/from_loc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/textfrom" />
+        <!--android:hint="Введите город отправления"
+            android:maxLines="1"-->
+
+        <TextView
+            android:id="@+id/textav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Средняя скорость движения"
+            app:layout_constraintTop_toBottomOf="@+id/way_length"/>
+
+        <EditText
+            android:id="@+id/average_speed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введите среднюю скорость"
+            android:maxLines="1"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textav" />
+
+        <TextView
+            android:id="@+id/textcost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Стоимость"
+            app:layout_constraintTop_toBottomOf="@+id/average_speed"/>
+
+        <EditText
+            android:id="@+id/cost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введите стоимость проезда"
+            android:maxLines="1"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textcost" />
+
+        <TextView
+            android:id="@+id/textw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ограничения по весу"
+            app:layout_constraintTop_toBottomOf="@+id/cost"/>
+
+        <EditText
+            android:id="@+id/weight_limit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введите лимит по весу (кг)"
+            android:maxLines="1"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textw" />
+
+        <TextView
+            android:id="@+id/texth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ограничения по высоте"
+            app:layout_constraintTop_toBottomOf="@+id/weight_limit"/>
+
+        <EditText
+            android:id="@+id/height_limit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введите лимит по высоте (м)"
+            android:maxLines="1"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texth" />
+
+        <TextView
+            android:id="@+id/textmax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Максимальная скорость"
+            app:layout_constraintTop_toBottomOf="@+id/height_limit"/>
+
+        <EditText
+            android:id="@+id/max_speed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введите максимальную скорость движения (км/ч)"
+            android:maxLines="1"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textmax" />
+
+        <TextView
+            android:id="@+id/textroad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пропускная способность:"
+            app:layout_constraintTop_toBottomOf="@+id/max_speed"/>
+
+        <EditText
+            android:id="@+id/road_capacity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введите пропускную способность"
+            android:maxLines="1"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textroad" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:onClick="save"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/cl1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/deleteButton"
+        />
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Удалить"
+        android:onClick="delete"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/cl1"
+        app:layout_constraintLeft_toRightOf="@+id/saveButton"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
